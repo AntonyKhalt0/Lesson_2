@@ -1,4 +1,4 @@
-shopping_cart = Hash.new
+shopping_cart = {}
 
 loop do
   print "Введите название товара (или стоп для выхода): "

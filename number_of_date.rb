@@ -24,13 +24,8 @@ print "Введите год: "
 user_year = gets.chomp.to_i
 
 if user_year % 4 == 0
-  if user_year % 100 == 0
-    if user_year % 400 == 0
-      months['February'] = 29
-    end
-  else
-    months['February'] = 29
-  end
+  months['February'] = 29 if user_year % 100 != 0
+  months['February'] = 29 if user_year % 100 == 0 && user_year % 400 == 0
 end   
 
 count_day = 0

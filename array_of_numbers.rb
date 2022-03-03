@@ -1,2 +1,2 @@
-numbers = Array.new
-10.step(100,5) { |number| numbers.push(number) }  
+numbers = []
+(10..100).step(5).each { |number| numbers.push(number) }  
